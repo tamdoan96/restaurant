@@ -6,6 +6,9 @@ import Image from "./Image";
 import Text from "./Text";
 import Header from "./Header";
 import Footer from "./Footer";
+
+// Try to add one comment
+
 function App() {
   let slideIndex: number = 0;
   function CurrentSlide(num: number) {
