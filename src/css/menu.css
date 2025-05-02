@@ -142,3 +142,15 @@ li a {
   visibility: visible;
   opacity: 1;
 }
+.creatton {
+  padding: 5px;
+  font-size: larger;
+  color: #a21d33;
+  background-color: #ddc6b6;
+  border: 1px solid brown;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all;
+}

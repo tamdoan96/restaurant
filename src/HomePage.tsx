@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 // import reactLogo from "./assets/react.svg";
 // import viteLogo from "/vite.svg";
-import "./App.css";
+import "./css/App.css";
 import Image from "./Image";
 import Text from "./Text";
 import Header from "./Header";
