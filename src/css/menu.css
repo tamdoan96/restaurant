@@ -142,18 +142,6 @@ li a {
   visibility: visible;
   opacity: 1;
 }
-.creatton {
-  padding: 5px;
-  font-size: larger;
-  color: #a21d33;
-  background-color: #ddc6b6;
-  border: 1px solid brown;
-  border-radius: 5px;
-  text-align: center;
-  text-decoration: none;
-  cursor: pointer;
-  transition: all;
-}
 .foods {
   display: flex;
   flex-wrap: wrap; /* Cho phép tràn hàng */
@@ -215,11 +203,16 @@ li a {
   font-size: 10px;
 }
 .beginner-app-install {
-  margin: auto;
-  padding: 60px 0;
+  margin-left: 72px;
+  border-radius: 50px;
+  border: 1px solid;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  /* margin: auto; */
+  padding: 50px 0;
   max-width: 1120px;
   color: #fff;
-  background-image: url(https://tblg.k-img.com/images/help/beginner/beginner_bg_kv.png?ccb74b6…);
+  background-color: #46d087;
 }
 .beginner-app-install__inner {
   display: flex;
@@ -233,7 +226,7 @@ li a {
   height: 16px;
   vertical-align: middle;
   content: "";
-  background-image: url(https://tblg.k-img.com/images/help/beginner/beginner_webtoapp_icon.png?f6424d5…);
+  /* background-image: url(https://tblg.k-img.com/images/help/beginner/beginner_webtoapp_icon.png?f6424d5…); */
   background-size: contain;
 }
 .beginner-app-install__main {
@@ -281,4 +274,38 @@ p {
   margin-top: 20px;
   font-weight: 600;
   font-size: 1.6rem;
+}
+.menufd {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-around;
+}
+.creatton {
+  margin-bottom: 50px;
+  margin-top: 50px;
+  width: 100%;
+  /* padding: 20px; */
+  box-sizing: border-box;
+  /* margin: 39px; */
+  display: flex;
+  justify-content: space-around;
+}
+
+.creatton img {
+  border: 8px double orangered;
+  width: 80%;
+  /* height: 280px; */
+  /* height: 455px;
+  margin-bottom: 50px;
+  width: 50%;
+  margin-top: 5px;
+  align-items: center;
+  margin-left: 35px;
+  border: solid 2px #b0151b; */
+}
+hr {
+  margin-right: 250px;
+  margin-left: 250px;
+  border-top: 2px solid black;
+  margin-bottom: 25px;
 }

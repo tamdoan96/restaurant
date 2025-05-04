@@ -25,25 +25,28 @@ function Food() {
   return (
     <div style={{ backgroundColor: "#F6EBEB" }}>
       <Header />
-      <div
-        className="creatton"
-        onClick={() => {
-          setShowFood(!showFood);
-          // setShowDrink(showFood);
-        }}
-      >
-        Food
+      <div className="menufd">
+        <div
+          className="creatton tooltip"
+          onClick={() => {
+            setShowFood(!showFood);
+            // setShowDrink(showFood);
+          }}
+        >
+          <span className="tooltiptext">Click here</span>
+          <img src="./menu/anhan.png" />
+        </div>
+        <div
+          className="creatton tooltip"
+          onClick={() => {
+            // setShowFood(showDrink);
+            setShowDrink(!showDrink);
+          }}
+        >
+          <span className="tooltiptext">Click here</span>
+          <img src="./menu/anhnuoc.png" />
+        </div>
       </div>
-      <div
-        className="creatton"
-        onClick={() => {
-          // setShowFood(showDrink);
-          setShowDrink(!showDrink);
-        }}
-      >
-        Drink
-      </div>
-
       {showFood &&
         Object.keys(listItem["food"]).map((key) => {
           return (
@@ -111,6 +114,7 @@ function Food() {
             </div>
           );
         })}
+      <hr />
 
       <section className="beginner-app-install">
         <div className="beginner-app-install__inner">
