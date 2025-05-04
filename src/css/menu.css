@@ -154,3 +154,131 @@ li a {
   cursor: pointer;
   transition: all;
 }
+.foods {
+  display: flex;
+  flex-wrap: wrap; /* Cho phép tràn hàng */
+  gap: 20px; /* Khoảng cách giữa các div con */
+  justify-content: space-between;
+  margin-bottom: 22px;
+}
+.food {
+  margin-right: 26px;
+  width: 45%;
+  display: flex;
+  justify-content: space-around;
+  margin-left: 26px;
+  background-color: white;
+  padding: 10%;
+  border: solid 2px #b0151b;
+  padding: 20px;
+  background-color: #2e2222;
+  color: #ffffff;
+  border-radius: 10px;
+  /* opacity: 0.7; */
+  text-align: center;
+  margin-bottom: 0px;
+}
+.menu-image {
+  padding: 5px;
+  width: 50%;
+}
+.menu-image img {
+  border-radius: 5px;
+  border: 1.5px solid orange;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+}
+.menu-text {
+  width: 60%;
+  /* margin-bottom: 10px;
+  padding: 10px; */
+  margin-left: 20px;
+  /* margin-left: 0px;
+    margin-right: 20px;
+    line-height: 35px; */
+  font-family: "Zen Maru Gothic", serif;
+}
+.menu-text strong {
+  font-size: 18px;
+  color: aquamarine;
+}
+.keys {
+  border: 1px solid;
+  text-align: center;
+  color: darkgreen;
+  margin: 15px;
+  font-size: 22px;
+}
+.moji {
+  padding: 3px;
+  font-size: 10px;
+}
+.beginner-app-install {
+  margin: auto;
+  padding: 60px 0;
+  max-width: 1120px;
+  color: #fff;
+  background-image: url(https://tblg.k-img.com/images/help/beginner/beginner_bg_kv.png?ccb74b6…);
+}
+.beginner-app-install__inner {
+  display: flex;
+  flex-flow: row-reverse;
+  justify-content: center;
+}
+.beginner-app-install__detail::before {
+  display: inline-block;
+  margin-right: 8px;
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+  content: "";
+  background-image: url(https://tblg.k-img.com/images/help/beginner/beginner_webtoapp_icon.png?f6424d5…);
+  background-size: contain;
+}
+.beginner-app-install__main {
+  margin-right: 80px;
+}
+div,
+p {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+.beginner-app-install__heading {
+  margin-bottom: 30px;
+  font-size: 28px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong,
+em,
+b {
+  font-style: normal;
+  font-weight: bold;
+}
+.beginner-app-install__detail {
+  margin-bottom: 8px;
+  font-size: 1.6rem;
+}
+div,
+p {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+.beginner-app-install__btn {
+  margin-top: 30px;
+}
+div,
+p {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+.beginner-app-install__text {
+  margin-top: 20px;
+  font-weight: 600;
+  font-size: 1.6rem;
+}
