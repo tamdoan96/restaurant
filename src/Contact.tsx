@@ -12,7 +12,7 @@ function ContactUs() {
 
   const [errors, setErrors] = useState<{ [key: string]: string }>({});
   const toastRef = useRef<HTMLDivElement>(null);
-  const handleOrder = () => {
+  const handleOrder = (type: string) => {
     const newErrors: { [key: string]: string } = {};
 
     if (!userMail.trim()) newErrors.userMail = "! This is a required question";
@@ -24,7 +24,7 @@ function ContactUs() {
       setErrors(newErrors);
     } else {
       setErrors({});
-      if (toastRef.current) {
+      if (type == "button" && toastRef.current) {
         toastRef.current.style.visibility = "visible";
         setTimeout(() => {
           if (toastRef.current) toastRef.current.style.visibility = "hidden";
@@ -41,7 +41,7 @@ function ContactUs() {
         <h2>Smoke & Spice GROW’s</h2>
         <h3>Restaurants 2025</h3>
       </div>
-      <div className="contact2">
+      <div className="contact4">
         <h2>Contact</h2>
         <p>以下フォームに必要事項をご入力の上、お問い合わせください。</p>
         <p>Please enter the required information in the form below.</p>
@@ -55,13 +55,11 @@ function ContactUs() {
         <br />
         <input
           type="email"
-          value={userName}
+          value={userMail}
           placeholder="Your mail"
           onChange={(e) => setUserMail(e.target.value)}
         />
-        {errors.userMail && (
-          <div className="error-message">{errors.userMail}</div>
-        )}
+        {errors.userMail && <div className="error-text">{errors.userMail}</div>}
       </div>
       <div className="contact2">
         Name <span style={{ color: "red" }}>*</span>：
@@ -73,9 +71,7 @@ function ContactUs() {
           placeholder="Your answwer"
           onChange={(e) => setUserName(e.target.value)}
         />
-        {errors.userName && (
-          <div className="error-message">{errors.userName}</div>
-        )}
+        {errors.userName && <div className="error-text">{errors.userName}</div>}
       </div>
       <div className="contact2">
         Comment here<span style={{ color: "red" }}>*</span>：
@@ -88,10 +84,10 @@ function ContactUs() {
           onChange={(e) => setUserComment(e.target.value)}
         />
         {errors.userComment && (
-          <div className="error-message">{errors.userComment}</div>
+          <div className="error-text">{errors.userComment}</div>
         )}
       </div>
-      <div className="contact1">
+      <div className="contact3">
         <p>
           Handling of personal information / 「個人情報の取り扱い」について * If
           you agree to our to privacy policy, please select “agree” and press
@@ -99,36 +95,35 @@ function ContactUs() {
           に同意いただける方は「同意する」にチェックを付け「送信」ボタンをクリックしてください。
         </p>
         <p>
-          <input type="checkbox" />
+          <input type="checkbox" onClick={() => handleOrder("")} />
           Agree / 同意する
         </p>
       </div>
       <div style={{ marginTop: "16px" }}>
-        <button onClick={handleOrder}>予約</button>
-        <div
-          ref={toastRef}
-          style={{
-            visibility: "hidden",
-            minWidth: "250px",
-            backgroundColor: "#b0151b",
-            color: "#ffffff",
-            textAlign: "center",
-            borderRadius: "8px",
-            padding: "16px",
-            position: "fixed",
-            zIndex: 1,
-            left: "50%",
-            bottom: "60px",
-            transform: "translateX(-50%)",
-            fontSize: "18px",
-          }}
-        >
-          ご予約
-          <br />
-          ありがとうございます！
-        </div>
+        <button onClick={() => handleOrder("button")} className="btn">
+          送信
+        </button>
       </div>
-
+      <div
+        ref={toastRef}
+        style={{
+          visibility: "hidden",
+          minWidth: "250px",
+          backgroundColor: "#b0151b",
+          color: "#ffffff",
+          textAlign: "center",
+          borderRadius: "8px",
+          padding: "16px",
+          position: "fixed",
+          zIndex: 1,
+          left: "50%",
+          bottom: "60px",
+          transform: "translateX(-50%)",
+          fontSize: "18px",
+        }}
+      >
+        お問い合わせが送信されました。ありがとうございます。
+      </div>
       <Footer />
     </div>
   );

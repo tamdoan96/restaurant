@@ -311,7 +311,7 @@ hr {
 }
 
 .contact1 {
-  border: 1.5px solid gainsboro;
+  border: 1.5px solid #6c5e5e;
   color: black;
   margin: auto;
   margin-top: 20px;
@@ -324,7 +324,7 @@ hr {
   border-radius: 10px;
 }
 .contact2 {
-  border: 1.5px solid gainsboro;
+  border: 1.5px solid #6c5e5e;
   color: black;
   margin: auto;
   margin-top: 20px;
@@ -345,4 +345,79 @@ hr {
 .contact2 input {
   border: none;
   border-bottom: 1px solid #ee0f0f; /* chỉ giữ lại đường dưới */
+  outline: none;
+}
+.contact3 {
+  border: 1.5px solid #6c5e5e;
+  color: black;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 60%;
+  justify-content: space-around;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+.contact4 {
+  border: 1.5px solid #6c5e5e;
+  color: black;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 60%;
+  justify-content: space-around;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  border-top: 23px solid darkred;
+}
+.error-text {
+  color: red;
+  font-size: 12px;
+}
+.btn {
+  margin-bottom: 40px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 13px;
+  padding-right: 13px;
+  background-color: #b0151b;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  /* position: fixed; */
+  bottom: 60px;
+  right: 20px;
+  font-size: 20px;
+  float: left;
+  margin-left: 249px;
+}
+.hr {
+  margin-top: -40px;
+  margin-right: 190px;
+  margin-left: 190px;
+  border-top: 2px dashed #193910;
+  margin-bottom: 25px;
+}
+table td {
+  padding-left: 30px;
+  background-color: #e8e4e5;
+  border-top: 1px solid #4bec07;
+  border-left: 1px solid #4bec07;
+}
+table th {
+  text-align: left;
+  padding: 15px;
+  border-top: 1px solid #4bec07;
+  border-left: 1px solid #4bec07;
+  background-color: #dcd3d3;
+}
+table {
+  margin-left: 65px;
+  margin-bottom: 50px;
+  width: 90%;
+}
+.t1 h3 {
+  margin-left: 65px;
 }
