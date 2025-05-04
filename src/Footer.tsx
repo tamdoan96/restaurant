@@ -9,7 +9,9 @@ function Footer() {
         </strong>
       </div>
       <div className="restaurant">
-        <strong>CONTACT US</strong>
+        <strong>
+          <a href="/contact"> CONTACT US</a>
+        </strong>
       </div>
       <div className="restaurant">
         <a href="https://www.facebook.com/growHCMC?utm_source=chatgpt.com">

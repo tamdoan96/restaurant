@@ -309,3 +309,40 @@ hr {
   border-top: 2px solid black;
   margin-bottom: 25px;
 }
+
+.contact1 {
+  border: 1.5px solid gainsboro;
+  color: black;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  width: 60%;
+  justify-content: space-around;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+.contact2 {
+  border: 1.5px solid gainsboro;
+  color: black;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 60%;
+  justify-content: space-around;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+.contact1 h2,
+.contact1 h3 {
+  font-size: 35px;
+  text-shadow: 1px 0 red;
+  text-align: center;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+.contact2 input {
+  border: none;
+  border-bottom: 1px solid #ee0f0f; /* chỉ giữ lại đường dưới */
+}
