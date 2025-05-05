@@ -46,7 +46,7 @@ function App() {
   return (
     <>
       <Header />
-      <Image url={"image/anhnen1.jpg"} text="" />
+      <Image height={"100%"} url={"image/anhnen1.jpg"} text="" />
       <Text
         urls={"image/div4.jpg"}
         text1={"4 Chome-1 Minamisenba, Chuo Ward, Osaka"}

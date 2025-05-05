@@ -421,3 +421,43 @@ table {
 .t1 h3 {
   margin-left: 65px;
 }
+.note img {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  height: 100%;
+  width: 75%;
+  background-color: #ea9292;
+}
+.note {
+  /* padding-bottom: 40px; */
+  background-color: #ea9292;
+  text-align: center;
+}
+.nameTravel {
+  margin-top: -58px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.dress {
+  border-top: 28px solid white;
+  max-width: 450px;
+  /* padding-top: 20px; */
+  margin: 20px 20px;
+  flex: 1;
+  background-color: #f0f7f7;
+  text-align: center;
+  border-radius: 27px;
+  border: 20px solid #89c6c9;
+}
+.dress p {
+  padding-left: 10px;
+  padding-right: 10px;
+  font-family: "Zen Maru Gothic", serif;
+  line-height: 28px;
+}
+.dress img {
+  height: 262px;
+  width: 100%;
+}

@@ -17,13 +17,10 @@ function Header() {
             <a href="/">ホーム</a>
           </li>
           <li>
-            <a href="notice.html">お知らせ</a>
+            <a href="/note">食べログについて</a>
           </li>
           <li>
             <a href="/food">メニュー</a>
-          </li>
-          <li>
-            <a href="serve.html">注文方法</a>
           </li>
         </ul>
       </div>
